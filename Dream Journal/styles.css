@@ -9,7 +9,7 @@ body {
     padding: 20px; /* Padding for the body */
     font-size: 25px; /* Set base font size */
 background: linear-gradient(to bottom, #f0f0f0, #e3d8c2);
-min-height: 100vh;
+   min-height: 100vh;
 }
 
 h1 {
@@ -25,6 +25,7 @@ color: #a1a8ae;
     border-radius: 50px 20px;
     border-bottom: 2px solid #ddc0bd;
 box-shadow: 3px 3px 5px #d3c3c1;
+margin-top: auto;
 }
 
 label {
@@ -51,6 +52,10 @@ border-radius: 50px;
     width: -webkit-fill-available;
     border: 2px solid white;
     box-shadow: 2px 2px 3px #0000005e;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
 }
 
 .view{
@@ -58,6 +63,10 @@ border-radius: 50px;
     width: -webkit-fill-available;
     border: 2px solid white;
     box-shadow: 2px 2px 3px #0000005e;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
 }
 
 #mood{
@@ -99,6 +108,14 @@ li {
     display: flex; /* Flexbox for alignment */
     justify-content: space-between; /* Space between dream text and button */
     align-items: center; /* Center items vertically */
+    box-shadow: 2px 2px 3px #0000005e;
+}
+
+.dream-p{
+	font-size: 22px;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 button {
@@ -117,6 +134,10 @@ border-radius: 50px;
     width: -webkit-fill-available;
     border: 2px solid white;
     box-shadow: 2px 2px 3px #0000005e;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
 }
 
 .delete {

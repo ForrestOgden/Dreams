@@ -8,7 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         dreams.forEach((entry, index) => { // Include index to identify each dream
             const li = document.createElement('li');
-            li.textContent = `Date: ${entry.date}, Mood: ${entry.mood}, Dream: ${entry.dream}`;
+            const p = document.createElement('p');
+            p.textContent = `Date: ${entry.date}, Mood: ${entry.mood}, Dream: ${entry.dream}`;
+	    p.classList.add('dream-p');
+            li.appendChild(p);
             
             // Create delete button
             const deleteButton = document.createElement('button');

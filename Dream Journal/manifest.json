@@ -1,0 +1,15 @@
+{
+  "name": "Dream Tracker",
+  "short_name": "DreamTracker",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#cbbdff",
+  "theme_color": "#f0e4d7", // Bone color
+  "icons": [
+    {
+      "src": "dreamicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
