@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Mood and Dream Tracker</title>
+    <title>Dream & Mood tracker</title>
 </head>
 <body>
-    <h1>Mood and Dream Tracker</h1>
+	<div>
+    <h1>DreamTime <img src="dreamicon.png" style="width:50px; height:50px;"></img></h1>
+	</div>
+<p class='intro' style="text-align: center; color: #5d7393; margin-bottom: 20px;">Tracking your dreams and moods in one convenient place.</p>
     <form id="logForm">
-        <label for="dream">Log Your Dream:</label>
+        <label class='dream-label' for="dream">Log Your Dream:</label>
         <textarea id="dream" required></textarea>
         
         <label for="mood">How Do You Feel?</label>
@@ -27,13 +30,13 @@
             <option value="inspired">Inspired</option>
         </select>
         
-        <button type="submit">Log Dream and Mood</button>
+        <button class ='log' type="submit">Log Dream and Mood</button>
     </form>
 
-    <button onclick="window.location.href='dreams.html'">View Dreams</button>
+
 
     <canvas id="moodChart" width="400" height="200"></canvas>
-    
+        <button class='view' onclick="window.location.href='dreams.html'">View Dreams</button>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>

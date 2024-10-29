@@ -1,49 +1,132 @@
+/* Importing a cool Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Use the imported font */
+    background-color: #f4f4f4; /* A subtle background color */
+    margin: 0;
+    padding: 20px; /* Padding for the body */
+    font-size: 25px; /* Set base font size */
+background: linear-gradient(to bottom, #f0f0f0, #e3d8c2);
+min-height: 100vh;
 }
 
 h1 {
-    color: #124672;
     text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 20px;
+color: #a1a8ae;
+    margin-bottom: 30px;
+    font-size: 55px;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+    text-shadow: 2px 2px 5px #ffffff;
+    background-color: mistyrose;
+    border-radius: 50px 20px;
+    border-bottom: 2px solid #ddc0bd;
+box-shadow: 3px 3px 5px #d3c3c1;
 }
 
 label {
-    margin: 10px 0 5px;
+  color: darkgray;
+  text-shadow: 2px 2px 4px antiquewhite;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
 }
 
-textarea, select {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #5d7393;
-    border-radius: 5px;
+.dream-label {
+	margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 16px;
+  margin-top: -20px;
+}
+
+.log{
+	margin-bottom: 35px;
+border-radius: 50px;
+    width: -webkit-fill-available;
+    border: 2px solid white;
+    box-shadow: 2px 2px 3px #0000005e;
+}
+
+.view{
+border-radius: 50px;
+    width: -webkit-fill-available;
+    border: 2px solid white;
+    box-shadow: 2px 2px 3px #0000005e;
+}
+
+#mood{
+	width: 100px;
+	height: 36px;
+	margin-left: 10px;
+        font-size: 20px;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  background: #ffe0e0;;
+}
+
+
+
+textarea {
+    width: -webkit-fill-available;
+    height: 150px; /* Increased height for the text area */
+    padding: 10px; /* Padding inside the text area */
+    font-size: 20px; /* Increased font size for text area */
+    border: 3px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Spacing below the text area */
+background-color: #151e750a;
+}
+
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    background-color: #ffffff; /* White background for dreams */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding for the list item */
+    margin: 10px 0; /* Spacing between dreams */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between dream text and button */
+    align-items: center; /* Center items vertically */
 }
 
 button {
-    padding: 10px;
-    background-color: #d1a835;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #cbbdff;; /* Color for delete button */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for button */
+    padding: 10px 15px; /* Padding for the button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Transition effect */
+    font-size: 20px; /* Increased font size for buttons */
+}
+
+.return{
+border-radius: 50px;
+    width: -webkit-fill-available;
+    border: 2px solid white;
+    box-shadow: 2px 2px 3px #0000005e;
+}
+
+.delete {
+  background-color: #ff7676c7;
 }
 
 button:hover {
-    background-color: #aa3e56;
+    background-color: #d1a835; /* Change color on hover */
 }
 
-canvas {
-    margin-top: 20px;
-    max-width: 100%;
+button:last-of-type {
+    margin-top: 20px; /* Spacing above the return button */
 }
