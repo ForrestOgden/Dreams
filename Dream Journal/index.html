@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mood and Dream Tracker</title>
+</head>
+<body>
+    <h1>Mood and Dream Tracker</h1>
+    <form id="logForm">
+        <label for="dream">Log Your Dream:</label>
+        <textarea id="dream" required></textarea>
+        
+        <label for="mood">How Do You Feel?</label>
+        <select id="mood" required>
+            <option value="">Select Mood</option>
+            <option value="joyful">Joyful</option>
+            <option value="happy">Happy</option>
+            <option value="neutral">Neutral</option>
+            <option value="sad">Sad</option>
+            <option value="frustrated">Frustrated</option>
+            <option value="angry">Angry</option>
+            <option value="anxious">Anxious</option>
+            <option value="excited">Excited</option>
+            <option value="relaxed">Relaxed</option>
+            <option value="inspired">Inspired</option>
+        </select>
+        
+        <button type="submit">Log Dream and Mood</button>
+    </form>
+
+    <button onclick="window.location.href='dreams.html'">View Dreams</button>
+
+    <canvas id="moodChart" width="400" height="200"></canvas>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
